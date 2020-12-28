@@ -1,6 +1,9 @@
+ssh-agent bash
 chmod 700 /home/hejing/git/*
 ssh-add /home/hejing/git/git_ssh
 ssh-add /home/hejing/git/git_ssh.pub 
+git config --global user.email "442531949@qq.com"
+git config --global user.name "hejing-442531949"
 ssh -T git@github.com
 git init
 git add .
