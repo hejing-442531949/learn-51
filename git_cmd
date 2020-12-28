@@ -1,0 +1,7 @@
+chmod 700 /home/hejing/git/*
+ssh-add /home/hejing/git/git_ssh
+ssh-add /home/hejing/git/git_ssh.pub 
+ssh -T git@github.com
+git init
+git add .
+git clone https://github.com/hejing-442531949/learn-51.git
