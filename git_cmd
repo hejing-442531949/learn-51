@@ -1,16 +1,26 @@
+# 配置服务器
 ssh-agent bash
 chmod 700 /home/hejing/git/*
 ssh-add /home/hejing/git/git_ssh
 ssh-add /home/hejing/git/git_ssh.pub 
 git config --global user.email "442531949@qq.com"
 git config --global user.name "hejing-442531949"
+
+# 下载到本地
+git clone https://github.com/hejing-442531949/learn-51.git
+
 ssh -T git@github.com
 git init
+
+# 更新并上传
 git add .
+git commit -m 'info'
+git pull
 
 # 只输一次密码
 git config --global credential.helper store
 
-# 克隆以及同步
-git clone https://github.com/hejing-442531949/learn-51.git
-git pull
+# 查看当前的远程库
+git remote
+git remote -v
+
