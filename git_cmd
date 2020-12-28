@@ -7,4 +7,10 @@ git config --global user.name "hejing-442531949"
 ssh -T git@github.com
 git init
 git add .
+
+# 只输一次密码
+git config --global credential.helper store
+
+# 克隆以及同步
 git clone https://github.com/hejing-442531949/learn-51.git
+git pull
