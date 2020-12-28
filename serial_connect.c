@@ -47,7 +47,6 @@ void serial_interrupt() using 4 interrupt 0 {
 }
 
 void main() {
-	init_serial();
 	while (enable_send) {
 		send_uchar(g_read_char);
 		enable_send = 0;
