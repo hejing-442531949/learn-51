@@ -311,3 +311,8 @@ sbit CP_RL2 = T2CON^0;
 //		  方式2,波特率=f/64 or f/32(当SMOD=1时)
 //		  方式1,波特率=((2^SMOD)/32 )*溢出率 -> 溢出率/32 or 溢出率/16(SMOD=1时)
 //					  =fosc/(12*32*x)	or fosc/(12*16*x)
+
+// PCON:power contril,其中的SMOD与波特率相关,不用
+// SCON:serial control SM0 SM1 SM2 REN TB8 RB8 TI RI 串口通信相关
+// SMOD:波特率加倍标志
+// TMOD:timer mode timer1(gate,ct,m1 m0) timer0(gate,ct,m1,m0)
